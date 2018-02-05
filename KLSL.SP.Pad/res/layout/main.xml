@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B9B9B9" >
+
+    <ImageButton
+        android:id="@+id/btnAnswerSubjects"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/score_insert"
+        android:contentDescription="@string/AnswerSubjects" />
+
+    <ImageButton
+        android:id="@+id/btnShopScoreSearch"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_alignTop="@+id/btnAnswerSubjects"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/btnAnswerSubjects"
+        android:background="@drawable/scroe_search"
+        android:contentDescription="@string/ShopScoreSearch" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnShopScoreSearch"
+        android:layout_alignRight="@+id/btnShopScoreSearch"
+        android:layout_below="@+id/btnShopScoreSearch"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/ShopScoreSearch"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnAnswerSubjects"
+        android:layout_below="@+id/btnShopScoreSearch"
+        android:layout_toLeftOf="@+id/btnShopScoreSearch"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/AnswerSubjects"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/btnScoreStatistics"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_alignTop="@+id/btnShopScoreSearch"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/btnShopScoreSearch"
+        android:background="@drawable/score_statistics"
+        android:contentDescription="@string/ShopScoreSearch" />
+
+    <ImageButton
+        android:id="@+id/btnSystemSetting"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_above="@+id/TextView01"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/btnScoreStatistics"
+        android:background="@drawable/system_setting"
+        android:contentDescription="@string/ShopScoreSearch" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignLeft="@+id/btnScoreStatistics"
+        android:layout_toLeftOf="@+id/btnSystemSetting"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="得分统计"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSystemSetting"
+        android:layout_alignRight="@+id/btnSystemSetting"
+        android:layout_below="@+id/btnSystemSetting"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="系统设置"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF" >
+
+    </RelativeLayout>
+
+</RelativeLayout>

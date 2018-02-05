@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="checklist_values">
+        <item >合格</item>
+        <item >合理缺项</item>
+        <item >不合格</item>
+    </string-array>
+</resources>

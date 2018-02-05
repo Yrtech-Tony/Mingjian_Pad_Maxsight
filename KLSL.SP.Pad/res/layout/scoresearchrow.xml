@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="0dp" >
+
+    <View style="@style/list_vertical_layout" />
+
+    <com.klsl.sp.pad.utility.ListViewButton
+        android:id="@+id/btnDetail"
+        style="@style/ButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:focusable="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/AnswerSubjects"
+        android:textColor="#000000"
+        android:textSize="16dp" 
+        android:layout_margin="3dp"/>
+
+    <View style="@style/list_vertical_layout" />
+
+    <TextView
+        android:id="@+id/colNO"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:padding="10dp"
+        android:text="@string/colNO"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <View style="@style/list_vertical_layout" />
+
+    <TextView
+        android:id="@+id/subjectCode"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:padding="10dp"
+        android:text="@string/colSubjectCode"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <View style="@style/list_vertical_layout" />
+
+    <TextView
+        android:id="@+id/orderNO"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:padding="10dp"
+        android:text="@string/colOrderNO"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <View style="@style/list_vertical_layout" />
+
+    <TextView
+        android:id="@+id/checkPoint"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:padding="10dp"
+        android:text="@string/colCheckPoint"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <View style="@style/list_vertical_layout" />
+
+    <TextView
+        android:id="@+id/Score"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10dp"
+        android:text="@string/colScore"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <View style="@style/list_vertical_layout" />
+    <!-- android:singleLine="true" 设置显示超出用省略号 -->
+
+    <TextView
+        android:id="@+id/hidenValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

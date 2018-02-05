@@ -1,0 +1,50 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+    
+    <style name="list_vertical_layout">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/list_border</item>
+    </style>
+    <style name="list_horizontal_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/list_border</item> 
+    </style>
+    
+    <style name="CheckBoxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:paddingLeft">35.0dip</item>
+        <item name="android:maxHeight">25.0dip</item>
+        <item name="android:textSize">20.0dip</item>
+    </style>
+    
+    <style name="RadioButtonStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/radiobutton_selector</item>
+        <item name="android:paddingLeft">35.0dip</item>
+        <item name="android:maxHeight">25.0dip</item>
+        <item name="android:textSize">20.0dip</item>
+    </style>
+    
+    <style name="SearchButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/btn_search_selector</item>
+        <item name="android:textColor">@drawable/button_font_selector</item>
+        <item name="android:width">60dip</item>
+        <item name="android:height">45dip</item>
+    </style>
+    
+    <style name="ButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:textColor">@drawable/button_font_selector</item>
+        <item name="android:width">60dp</item>
+        <item name="android:height">45dp</item>
+    </style>
+    
+    <style name="SpinnerStyle" parent="@android:style/Widget.Spinner">
+        <item name="android:background">@drawable/spinner_selector</item>
+        <item name="android:width">160dp</item>
+        <item name="android:height">45dp</item>
+    </style>
+    
+</resources>

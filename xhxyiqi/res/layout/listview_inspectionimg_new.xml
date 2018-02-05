@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center_vertical"
+        android:padding="0dp" >
+
+        <TextView
+            android:id="@+id/fileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/checkBoxfileName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/checkBoxfileName"
+            android:gravity="left|center_horizontal"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="asdaassddasa"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" 
+            android:focusable="false"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <View style="@style/list_horizontal_layout" />
+    <!-- android:singleLine="true" 设置显示超出用省略号 -->
+
+</LinearLayout>

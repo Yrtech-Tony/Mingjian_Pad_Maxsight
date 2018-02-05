@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border_round"
+            android:gravity="center_vertical" >
+            
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/txtProject"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Spinner
+                android:id="@+id/cboProject"
+                style="@style/SpinnerStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/txtDistributor"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/txtShopCode"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:text="796-01001" />
+
+            <Button
+                android:id="@+id/btnShop"
+                style="@style/SearchButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txtShopName"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                style="@style/ButtonStyle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Search" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_round" >
+
+            <LinearLayout
+                android:layout_width="655dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_round"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/head"
+                    android:layout_below="@+id/colNO"
+                    layout="@layout/scoresearchrow_head" />
+
+                <ListView
+                    android:id="@+id/listScoreInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@color/list_border"
+                    android:dividerHeight="1dip" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="585dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/scoringCriteriaTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:textSize="16dp" 
+                    android:text="@string/lblscoringCriteria" />
+
+                <TextView
+                    android:id="@+id/scoringCriteria"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:textSize="16dp" 
+                    android:maxLines="6"
+                    android:scrollbars="vertical" />
+
+                <TextView
+                    android:id="@+id/scoreElementsTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:textSize="16dp" 
+                    android:text="@string/lblscoreElements" />
+
+                <TextView
+                    android:id="@+id/scoreElements"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:textSize="16dp" 
+                    android:maxLines="6"
+                    android:scrollbars="vertical" />
+                
+                <TextView
+                    android:id="@+id/implementationTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:textSize="16dp" 
+                    android:text="检查方法" />
+
+                <TextView
+                    android:id="@+id/implementation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:textSize="16dp" 
+                    android:maxLines="6"
+                    android:scrollbars="vertical" />
+                
+                <TextView
+                    android:id="@+id/listImageTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:textSize="16dp" 
+                    android:text="@string/lblImageTitle" />
+
+                <ListView
+                    android:id="@+id/listImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp" 
+                    >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</HorizontalScrollView>

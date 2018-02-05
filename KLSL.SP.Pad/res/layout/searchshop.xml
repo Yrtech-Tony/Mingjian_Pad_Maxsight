@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border_round" 
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ShopCode"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/txtShopCode"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="经销商代码" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ShopName"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/txtShopName"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="经销商名称" />
+            
+            <Button
+                android:layout_marginLeft="15dp"
+                android:id="@+id/btnSearch"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Search" 
+                style="@style/ButtonStyle" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lstShop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_round"  >
+        </ListView>
+
+    </LinearLayout>
